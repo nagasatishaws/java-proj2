@@ -45,7 +45,7 @@ ENV PATH $PATH:$CATALINA_HOME/bin
 
 EXPOSE 8080
 EXPOSE 8009
-VOLUME "/opt/tomcat/webapps"
+VOLUME "/opt/tomcat/webapps/webapp.war"
 WORKDIR /opt/tomcat
 
 # Launch Tomcat
