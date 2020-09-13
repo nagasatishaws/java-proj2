@@ -1,4 +1,3 @@
-FROM tomcat:alpine
-
-RUN ["rm", "-fr", "/usr/local/tomcat/webapps/*"]
-COPY ./build/libs/* /usr/local/tomcat/webapps/webapp.war
+FROM tomcat:8
+# Take the war and copy to webapps of tomcat
+COPY target/*.war /usr/local/tomcat/webapps/myweb.war
